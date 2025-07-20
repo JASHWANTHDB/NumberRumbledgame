@@ -1,0 +1,75 @@
+    /* Reset & basic styles */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; }
+
+    /* Navigation Bar */
+    nav { background:#333; padding:1rem; position:sticky; top:0; z-index:100; }
+    nav ul { list-style:none; display:flex; justify-content:center; }
+    nav li { margin:0 1rem; }
+    nav a {
+      color:#fff; text-decoration:none; font-size:1.1rem;
+      position:relative; padding:0.25rem;
+      transition: color 0.3s;
+    }
+    /* Hover underline animation */
+    nav a::after {
+      content:''; position:absolute; width:0; height:2px; bottom:0; left:0;
+      background:#ffeb3b; transition: width 0.3s;
+    }
+    nav a:hover { color:#ffeb3b; }
+    nav a:hover::after { width:100%; }
+
+     
+     .button {
+      left:-50%;
+	  width: 100%;
+	  padding: 10px;
+	  background-color: #00aaff;
+	  color: white;
+	  font-size: 16px;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  transition: background 0.3s ease;
+	}
+	
+	.button:hover {
+	  background-color: lightblue;
+	}
+    /* Hero section */
+    .hero {
+      height:60vh; background-image:url('nature.jpg');
+      background-repeat:no-repeat;
+      display:flex; align-items:center; justify-content:center;
+      position:relative; overflow:hidden;
+    }
+    .hero::before {
+      content:''; position:absolute; inset:0; background:#000;
+    }
+    .hero h1 {
+      position:relative; color:#000fff; font-size:60px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity:0; transform: translateY(100px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-15px); }
+    }
+
+    /* Content Section */
+    .container { padding:2rem; max-width:800px; margin:0 auto; }
+    .card {
+      background:#fff; padding:1.5rem; margin:1rem 0;
+      border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); animation: bounce 0.6s; }
+    .card h2 { margin-bottom:0.5rem; color:#333; }
+    .card p { color:#555; line-height:1.6; }
+
+    /* Footer */
+    footer { text-align:center; padding:1rem; background:#333; color:#fff; }

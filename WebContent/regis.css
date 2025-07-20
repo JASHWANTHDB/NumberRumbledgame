@@ -1,0 +1,118 @@
+
+		    * {
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		  font-family: 'Segoe UI', sans-serif;
+		}
+		
+		
+		body, html {
+		  height: 100%;
+		  overflow: scrool;
+		  background: #1a1a1a;
+		}
+		h1{color:white;}
+		p{
+		font-size:25px;
+		font-family:Times New Roman;
+		color:white;
+		}
+		
+		/* Background Bubble Animation */
+		
+	.registration-container {
+	  position:relative;
+	  left: 80%;
+	  bottom:200px;
+	  width: 300px;
+	  transform: translate(-50%, -50%);
+	  background: rgba(255, 255, 255, 0.1);
+	  padding: 30px;
+	  border-radius: 12px;
+	  backdrop-filter: blur(10px);
+	  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+	  text-align: center;
+	  color: #fff;
+	}
+	
+	.registration-container h2 {
+	  margin-bottom: 20px;
+	  font-size: 24px;
+	}
+	
+	.registration-container input {
+	  width: 100%;
+	  padding: 10px;
+	  margin: 10px 0;
+	  border: none;
+	  border-radius: 15px;
+	}
+	
+	.registration-container button {
+	  width: 100%;
+	  padding: 10px;
+	  background-color: #00aaff;
+	  color: white;
+	  font-size: 16px;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  transition: background 0.3s ease;
+	}
+	
+	.registration-container button:hover {
+	  background-color: #008ecc;
+	}
+      						
+     
+        .message {
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+   }
+
+	.success {
+	    position: relative;
+	    top: 83%;
+	    left: 40%;
+	    width: 300px;
+	    background-color: #e6ffed;
+	    color: #207a40;
+	    border: 1px solid #b2e2c2;
+	}
+
+	.error {
+	    position: absolute;
+	    left: 70.4%;
+	    bottom:-240px;
+	    width: 300px;
+	    background-color: #ffe6e6;
+	    color: #a32020;
+	    border: 1px solid #e2b2b2;
+	}
+	.hero {
+      height:60vh;
+      display:flex; align-items:center; justify-content:center;
+      position:relative; overflow:scrool;
+    }
+    .hero::before {
+      content:''; position:absolute; inset:0; background:#000;
+    }
+    
+    .hero h1 {
+       color:#000fff; font-size:60px;
+       position :absolute;
+      animation: fadeInDown 1s ease-out ;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity:0; transform: translateY(100px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+   
+	
