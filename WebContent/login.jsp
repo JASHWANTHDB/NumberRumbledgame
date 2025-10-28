@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Customer login</title>
+    <link rel="icon" type="images" href="hello.png">
     <link rel="Stylesheet" href="regis.css">
 
 </head>
@@ -24,7 +25,7 @@
   <div class="registration-container">
   
     <h2>Login to your account</h2>
-<form action="" method="get">
+<form action="" method="get" autocomplete="off">
       
       <input type="email" placeholder="Email"  name="email" required />
       <input type="password" placeholder="Password"  name="password" required />
@@ -66,7 +67,7 @@
 			    if (rs.next()) {
 			       
 			        if (password.equals(rs.getString("Password"))) {
-			            response.sendRedirect("home.jsp");
+			            response.sendRedirect("home.html");
 			        } else {
 			            %>
 			            <div class="message error"> Your <strong>password is incorrect</strong>. Please try again.</div>

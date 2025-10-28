@@ -163,7 +163,7 @@ body, html {
 .registration-container button:hover {
   background-color: #008ecc;
 }
-.message {
+ .message {
     padding: 12px 20px;
     margin: 10px 0;
     border-radius: 6px;
@@ -171,16 +171,24 @@ body, html {
     font-weight: 500;
     max-width: 600px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
+   }
 
-.success {
-    background-color: #e6ffed;
-    color: #207a40;
-    border: 1px solid #b2e2c2;
-}
+	.success {
+	    position: relative;
+	    top: 83%;
+	    left: 40%;
+	    width: 300px;
+	    background-color: #e6ffed;
+	    color: #207a40;
+	    border: 1px solid #b2e2c2;
+	}
 
-.error {
-    background-color: #ffe6e6;
-    color: #a32020;
-    border: 1px solid #e2b2b2;
-}
+	.error {
+	    position: absolute;
+	    left: 70.4%;
+	    bottom:-240px;
+	    width: 300px;
+	    background-color: #ffe6e6;
+	    color: #a32020;
+	    border: 1px solid #e2b2b2;
+	}

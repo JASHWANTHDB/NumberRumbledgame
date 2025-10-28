@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition Game</title>
+    <link rel="icon" type="images" href="hello.png">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Addition Game</h1>
+        
+        <div class="score-container">
+            <div>Score: <span id="score">0</span></div>
+            <div>Question: <span id="question-number">1</span>/10</div>
+        </div>
+        
+        <div class="difficulty-selector">
+            <button class="difficulty-btn active-difficulty" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+        
+        <div id="game-screen">
+            <p id="instruction">Solve the addition problem:</p>
+            <div id="question"></div>
+            <div class="input-container">
+                <input type="number" id="user-answer" placeholder="Enter your answer" autocomplete="off">
+                <button id="submit-btn">Submit</button>
+            </div>
+        </div>
+        
+        <div id="result-screen" class="hidden">
+            <p id="result"></p>
+            <p id="solution"></p>
+            <button id="continue-btn">Continue</button>
+        </div>
+        
+        <div id="game-over-screen" class="hidden">
+            <p>THANK YOU FOR PLAYING THE ADDITION GAME</p>
+            <p>Your final score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+        
+        <div class="navigation">
+            <button class="nav-btn" onclick="window.location.href='sub.html'">Subtraction Game</button>
+            <button class="nav-btn" onclick="window.location.href='mil.html'">Multiplication Game</button>
+            <button class="nav-btn" onclick="window.location.href='div.html'">Division Game</button>
+        </div>
+    </div>
+
+    <script src="add.js">
+       
+    </script>
+</body>
+</html>

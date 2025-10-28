@@ -1,35 +1,36 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynamic Web Page with Menu & Animations</title>
+  <title>Dynamic Web Page with Menu And Animations</title>
+  <link rel="icon" type="images" href="hello.png">
     <link rel="Stylesheet" href="Indexs.css">
  
   <script>
-  function handle(event) {
-    event.preventDefault(); // Prevents the link from navigating
+  function handle() {
+    //event.preventDefault(); // Prevents the link from navigating
     alert("Login to open this Page");
   }
 </script>
 </head>
 <body>
-<div></div>
+<div>
   <nav>
     <ul>
       <li><a href="#home" >Home</a></li>
-      <li><a href="#about" onclick="handle(event)">About</a></li>
-      <li><a href="#services" onclick="handle(event)">Services</a></li>
-      <li><a href="#contact" onclick="handle(event)">Contact</a></li>     <li></li><li></li><li></li>
-     <li><form action="login.jsp"><button type ="submit" class="button" style="background-color:#00123f">LOGIN</button>
-    </form></li><li><form action="Reguster.jsp"><button type ="submit" class="button" >REGISTER</button>
-    </form></li>
+      <li><a href="#about" onclick="handle()">About</a></li>
+      <li><a href="#services" onclick="handle()">Services</a></li>
+      <li><a href="#contact" onclick="handle()">Contact</a></li>     <li></li><li></li><li></li>
+      <li><form action="login.jsp"><button type ="submit" class="button" style="background-color:#00123f">LOGIN</button>
+      </form></li><li><form action="Reguster.jsp">
+      <button type ="submit" class="button" >REGISTER</button>
+       </form></li>
     </ul>
   </nav>
+</div>
 
-  <section style="" class="hero" id="home">
+  <section class="hero" id="home">
     <h1>Welcome</h1>
   </section>
 

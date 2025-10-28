@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Student Details</title>
-     <link rel="Stylesheet" href="style.css">    
+     <link rel="Stylesheet" href="style.css">   
+     <link rel="icon" type="images" href="hello.png">
         
   
 </head>
@@ -56,7 +57,7 @@
                 rs = chepre.executeQuery();
                 if(rs.next()){
                 	%>
-                    <div class="message error" > Your <strong>ACCOUNt is Already </strong>exists </div>
+                    <div class="message error" > Your <strong>ACCOUNT is Already </strong>exists </div>
 
                     <% 
                 	

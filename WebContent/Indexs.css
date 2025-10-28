@@ -30,8 +30,24 @@
 	  border-radius: 5px;
 	  cursor: pointer;
 	  transition: background 0.3s ease;
+     }
+	     .city-selector {
+	    text-align: center;
+	    padding: 30px;
+	   }
+
+	  .city-selector label {
+	  font-size: 18px;
+	  display: block;
+	  margin-bottom: 10px;
 	}
-	
+
+	.city-selector .mySelect {
+	  width: 450px;
+	  height: 100px;
+	  border-radius: 8px;
+	}
+     
 	.button:hover {
 	  background-color: lightblue;
 	}
