@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Customer login</title>
+    <title>login</title>
     <link rel="icon" type="images" href="hello.png">
     <link rel="Stylesheet" href="regis.css">
 

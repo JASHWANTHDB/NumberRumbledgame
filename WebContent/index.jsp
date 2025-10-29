@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynamic Web Page with Menu And Animations</title>
+  <title>NumberRumbledGame</title>
   <link rel="icon" type="images" href="hello.png">
     <link rel="Stylesheet" href="Indexs.css">
  
